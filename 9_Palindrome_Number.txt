@@ -1,0 +1,30 @@
+
+
+bool isPalindrome(int x){
+    
+    bool balls;
+    
+    if(x < 0) {
+        
+        balls = false;
+    }
+    
+    int koom = x;
+    double fag = 0;
+    
+    while(koom > 0) {
+        
+        fag = fag * 10 + koom % 10;
+        koom = koom / 10;
+    }
+    
+    if(x == fag) {
+        
+        balls = true;
+    }
+    
+    return balls;
+}
+
+
+
